@@ -9,13 +9,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@metamask/detect-provider@1.2.0/dist/detect-provider.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
-        <link href="try1.js">
+        <script href="try1.js"></script>
         <script src=" https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
-
-        <!-- <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script> -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/vue@3.4.38/dist/vue.global.min.js"></script> -->
-        <!-- 引入样式 -->
-        <!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
         <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
         <title>LXL's Website</title>
         
@@ -248,53 +243,6 @@
                 document.getElementById('loginForm').style.display = 'block';
             }
 
-            //register
-            /*document.getElementById('register').addEventListener('submit', async function (e) {
-                e.preventDefault();
-                const formData = new FormData(this);
-                const data = {
-                    username: formData.get('username'),
-                    password: formData.get('password')
-                };
-
-                const response = await fetch('/register', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(data)
-                });
-
-                const result = await response.text();
-                alert(result);
-                if (response.ok) {
-                    switchToLogin();
-                }
-            });
-
-            //login
-            document.getElementById('login').addEventListener('submit', async function (e) {
-                e.preventDefault();
-                const formData = new FormData(this);
-                const data = {
-                    username: formData.get('username'),
-                    password: formData.get('password')
-                };
-
-                const response = await fetch('/login', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(data)
-                });
-
-                const result = await response.text();
-                alert(result);
-                if (response.ok) {
-                    window.location.href = '/'; // Redirect to the homepage
-                }
-            });*/
 
             //transaction
             async function ConnectMetaMask() {

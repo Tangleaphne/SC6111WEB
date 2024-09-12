@@ -27,10 +27,7 @@ db.connect(err => {
 });
 
 app.post('/register', (req, res) => {
-/*  const username = req.body.username;
-    const password = req.body.password; 
 
-    const hashedPassword = password; */
     console.log('Register endpoint hit');
     const {username, password} = req.body;
     const sql = 'INSERT INTO users1 (username, password) VALUES (?, ?)';
@@ -58,15 +55,6 @@ app.post('/login', (req, res) => {
     });
         
 });
-/*    const query = "INSERT INTO users (username, password) VALUES (?, ?)";
-    db.query(query, [username, hashedPassword], (err, result) => {
-        if (err) {
-            console.error('Database insert error:', err);
-            res.status(500).send('Database error');
-        } else {
-            res.send('Registration successful');
-        }
-    });    */
 
 
 app.listen(port, () => {
